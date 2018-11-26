@@ -15,7 +15,7 @@ This file contains the functions used for identifying the local terrain and appl
 This file contains the functions used for making decisions based on the perception.py data. While I did not modify this file from it's original clone, it contains a decision tree for deciding where and how the rover should operate.
 
 ## drive_rover.py
-This file contains the functions used for making decisions based on the perception.py data. While I did not modify this file from it's original clone, it contains a decision tree for deciding where and how the rover should operate.
+This file contains the functions used for making decisions based on perception.py and decision.py. This file runs the autonomous mode with the Roverism executable.  
 
 ## Rover_Project_Test_Notebook.ipynb
 This notebook explains how the rover will process images and make transformations on based on the perception data. After the perception data is calculated, it displays a video of the new mapping alongside the data already provided. 
