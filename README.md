@@ -13,11 +13,15 @@ The requirements of this project were to add code to give our rover the ability 
 
 To do this we were tasked with modifying perception.py to take input from the rover's camera and perform functions upon this data. The process for this went as followed:
 
-1. We modifed the `process_image()` function to make both a "warped" copy of the image for finding location relative of the rover and also a "masked" copy for identifying pixels that fell above or below a specified threshold. 
+1. We modifed the `process_image()` function to make both a "warped" copy of the image for finding location relative of the rover and also a "masked" copy for identifying pixels that fell above or below a specified threshold. This gave us a top down image of navigatable terrain relative to the rovers posistion.
+
+[image_3]: ./calibration_images/map_bw.png.jpg
 
 2. After the warped and masked copies were finished, the data could be used to identify both navigatable terrain along with a warped perspective of rover relative to it's surroundings. 
 
 3. The last step was to identify rocks that may be of interest based on their colors. This was done similarly to the mapping of terrain but we used a different color threshold in `find_rocks()` function that would detect rocks of interest.
+
+[image_3]: ./calibration_images/example_rock2.jpg
 
 ## perception.py
 This file contains the functions used for identifying the local terrain and applying matrix manipulations using opencv to map navigatable terrain and locate rocks of interest for collecting samples.
