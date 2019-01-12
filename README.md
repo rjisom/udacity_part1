@@ -1,6 +1,6 @@
 [//]: # (Image References)
 [image_0]: ./misc/rover_image.jpg
-[image_1]: ./calibration_images/map_bw.png.jpg
+[image_1]: ./calibration_images/map.jpg
 [image_2]: ./calibration_images/example_rock2.jpg
 
 # Part 1: Search and Sample Return Project
