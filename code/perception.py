@@ -81,6 +81,7 @@ def perspect_transform(img, src, dst):
     return warped, mask
 
 # find rocks based on rock pixels, levels is pixel values for rock
+# taken from the video, havent implemented in driver_rover.py yet
 def find_rocks(img, levels=(110,110,50)):
     rockpix = ((img[:,:,0] > level[0]) \
                & (img[:,:,1] > level[1]) \
