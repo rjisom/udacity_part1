@@ -2,9 +2,9 @@
 [image_0]: ./misc/rover_image.jpg
 [image_1]: ./calibration_images/map.jpg
 [image_2]: ./calibration_images/example_rock2.jpg
-[image_3]: ./calibration_images/console_update.jpg
-[image_4]: ./calibration_images/mapRed.jpg
-[image_5]: ./calibration_images/map2.jpg
+[image_3]: ./calibration_images/console_update.png
+[image_4]: ./calibration_images/mapRed.png
+[image_5]: ./calibration_images/map2.png
 
 # Part 1: Search and Sample Return Project
 
