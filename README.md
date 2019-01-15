@@ -2,6 +2,9 @@
 [image_0]: ./misc/rover_image.jpg
 [image_1]: ./calibration_images/map.jpg
 [image_2]: ./calibration_images/example_rock2.jpg
+[image_3]: ./calibration_images/console_update.jpg
+[image_4]: ./calibration_images/mapRed.jpg
+[image_5]: ./calibration_images/map2.jpg
 
 # Part 1: Search and Sample Return Project
 
@@ -15,9 +18,17 @@ The requirements of this project were to add code to give our rover the ability 
 
 To do this we were tasked with modifying perception.py to take input from the rover's camera and perform functions upon this data. The process for this went as followed:
 
-1. We modifed the `process_image()` function to make both a "warped" copy of the image for finding location relative of the rover and also a "masked" copy for identifying pixels that fell above or below a specified threshold. This gave us a top down image of navigatable terrain relative to the rovers posistion.
+1. We modifed the `process_image()` function to make both a "warped" copy of the image for finding location relative of the rover and also a "masked" copy for identifying pixels that fell above or below a specified color threshold. This gave us a top down image of navigatable terrain relative to the rovers posistion.
 
 ![alt text][image_1] 
+
+These new images were displayed on the rover console along with updates to the rover being displayed as a text file proving the rover was automously moving.
+
+![alt text][image_3] 
+
+![alt text][image_4] 
+
+![alt text][image_5] 
 
 2. After the warped and masked copies were finished, the data could be used to identify both navigatable terrain along with a warped perspective of rover relative to it's surroundings. 
 

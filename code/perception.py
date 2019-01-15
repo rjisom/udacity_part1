@@ -82,7 +82,7 @@ def perspect_transform(img, src, dst):
 
 # find rocks based on rock pixels, levels is pixel values for rock
 # taken from the video, havent implemented in driver_rover.py yet
-def find_rocks(img, levels=(110,110,50)):
+def find_rocks(img, level=(110,110,50)):
     rockpix = ((img[:,:,0] > level[0]) \
                & (img[:,:,1] > level[1]) \
                & (img[:,:,2] < level[2]))
@@ -145,6 +145,23 @@ def perception_step(Rover):
         # Rover.nav_angles = rover_centric_angles
         
     Rover.nav_angles = angles
+    
+    rock_map = find_rocks(warped, level=(110, 110, 50))
+    if rock_map.any():
+        rock_x , rock_y = rover_coords(rock_map)
+        
+        rock_x_world, rock_y_world = pix_to_world(rock_x, rock_y, Rover.pos[0], Rover.pos[1], Rover.yaw, world_size, scale)
+        
+        rock_dist, rock_ang = to_polar_coords(rock_x, rock_y)
+        rock_idx = np.argmin(rock_dist)
+        rock_xcen = rock_x_world[rock_idx]
+        rock_ycen = rock_y_world[rock_idx]
+        
+        Rover.worldmap[rock_ycen, rock_xcen, 1] = 255
+        Rover.vision_image[:,:,1] = rock_map = 255
+        
+    else:
+            Rover.vision_image[:,:,1] = 0
     
  
     
