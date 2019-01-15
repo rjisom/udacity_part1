@@ -1,10 +1,10 @@
 [//]: # (Image References)
-[image_0]: ./misc/rover_image.jpg
+[image_0]: ./misc/rover_image.jpg 
 [image_1]: ./calibration_images/map.jpg
 [image_2]: ./calibration_images/example_rock2.jpg
-[image_3]: ./calibration_images/console_update.png
-[image_4]: ./calibration_images/mapRed.png
-[image_5]: ./calibration_images/map2.png
+[image_3]: ./calibration_images/console_update.png =250x250
+[image_4]: ./calibration_images/mapRed.png =250x250
+[image_5]: ./calibration_images/map2.png =250x250
 
 # Part 1: Search and Sample Return Project
 
@@ -22,7 +22,7 @@ To do this we were tasked with modifying perception.py to take input from the ro
 
 ![alt text][image_1] 
 
-These new images were displayed on the rover console along with updates to the rover being displayed as a text file proving the rover was automously moving.
+These new images were displayed on the rover console along with updates to the rover being displayed as a text to the console proving the rover was automously moving.
 
 ![alt text][image_3] 
 
