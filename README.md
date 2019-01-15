@@ -1,10 +1,10 @@
 [//]: # (Image References)
-[image_0]: ./misc/rover_image.jpg 
-[image_1]: ./calibration_images/map.jpg
-[image_2]: ./calibration_images/example_rock2.jpg
-[image_3]: ./calibration_images/console_update.png <!-- .element height="50%" width="50%" -->
-[image_4]: ./calibration_images/mapRed.png <!-- .element height="50%" width="50%" -->
-[image_5]: ./calibration_images/map2.png <!-- .element height="50%" width="50%" -->
+[image_0]: (./misc/rover_image.jpg)
+[image_1]: (./calibration_images/map.jpg)
+[image_2]: (./calibration_images/example_rock2.jpg) {:height="50%" width="50%"}
+[image_3]: (./calibration_images/console_update.png) {:height="50%" width="50%"}
+[image_4]: (./calibration_images/mapRed.png) {:height="50%" width="50%"}
+[image_5]: (./calibration_images/map2.png) {:height="50%" width="50%"}
 
 # Part 1: Search and Sample Return Project
 
